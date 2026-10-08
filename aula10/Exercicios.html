@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Grid</title>
+
+    <style>
+        .grade {
+            display: grid;
+            gap: 10px;
+        }
+
+        .item {
+            background-color: rgb(159, 133, 221);
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* EXERCÍCIO 01 - 3 colunas */
+        .ex01 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        /* EXERCÍCIO 02 - 2 colunas */
+        .ex02 {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /* EXERCÍCIO 03 - frações */
+        .ex03 {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        /* EXERCÍCIO 04 - repeat */
+        .ex04 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        /* EXERCÍCIO 05 - responsividade */
+        .ex05 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        /* EXERCÍCIO 06 - auto-fit */
+        .ex06 {
+            grid-template-columns: repeat(
+                auto-fit,
+                minmax(220px, 1fr)
+            );
+        }
+
+        /* Tablet */
+        @media (max-width: 768px) {
+            .ex05 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* Celular */
+        @media (max-width: 480px) {
+            .ex05 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Exercício 01 — 3 Colunas</h2>
+
+    <div class="grade ex01">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    <h2>Exercício 02 — 2 Colunas</h2>
+
+    <div class="grade ex02">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    <h2>Exercício 03 — Frações</h2>
+
+    <div class="grade ex03">
+        <div class="item">2fr</div>
+        <div class="item">1fr</div>
+    </div>
+
+
+    <h2>Exercício 04 — Repeat</h2>
+
+    <div class="grade ex04">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+
+    <h2>Exercício 05 — Responsividade</h2>
+
+    <div class="grade ex05">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+
+    <h2>Exercício 06 — Auto-fit</h2>
+
+    <div class="grade ex06">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+</body>
+</html>
