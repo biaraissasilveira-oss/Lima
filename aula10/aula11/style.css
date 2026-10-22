@@ -1,9 +1,21 @@
 
 /* CONFIGURAÇÃO GERAL */
+
+:root {
+    --espresso: #2B170d;
+    --Café:  #29170f;
+    --caramelo: #C66A1A;
+    --creme: #F3E6D7;
+    --marfim: #FFF9F3;
+    --taupe: #9A887A;
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 html {
@@ -408,3 +420,10 @@ footer p {
         justify-content: center;
     }
 }
+
+    .cabecalho: 
+    .menu  {
+        display:flex;
+        gap;23px;
+        list- 
+    }
